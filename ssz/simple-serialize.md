@@ -61,7 +61,7 @@
 * **bitlist**: ordered variable-length collection of `boolean` values, limited to `N` bits
     * notation `Bitlist[N]`
 * **union**: union type containing one of the given subtypes
-    * notation `Union[type_0, type_1, ...]`, e.g. `union[None, uint64, uint32]`
+    * notation `Union[type_0, type_1, ...]`, e.g. `Union[None, Uint64, Uint32]`
 
 *Note*: Both `Vector[boolean, N]` and `Bitvector[N]` are valid, yet distinct due to their different serialization requirements. Similarly, both `List[boolean, N]` and `Bitlist[N]` are valid, yet distinct. Generally `Bitvector[N]`/`Bitlist[N]` are preferred because of their serialization efficiencies.
 
